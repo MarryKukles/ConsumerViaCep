@@ -14,7 +14,7 @@ var client = new HttpClient();
 try
 {
 HttpResponseMessage? response = await client.GetAsync(enderecoUrl);
-response. EnsureSuccessStatusCode();
+response.EnsureSuccessStatusCode();
 
 string responseString = await response.Content.ReadAsStringAsync();
 
